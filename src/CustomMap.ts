@@ -1,14 +1,13 @@
-import { User } from "./User";
-import { Company } from "./Company";
-
 //Instructions to all other classes on how they can be an argument to addMarker()
-interface Mappable {
+export interface Mappable {
     location: {
         lat: number;
         lng: number;
     }
 
     markerContent(): string;
+
+    
 }
 
 export class CustomMap {
